@@ -1,0 +1,108 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto',sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(image/fond.jpg);
+    background-size: cover;
+}
+
+.container{
+    width: 500px;
+    min-height: 450px;
+    background-color: transparent;
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+    padding: 90px 20px 20px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 0 5px #341f97;
+}
+
+h1{
+    text-align: center;
+    font-size: 2em;
+    background-color: #341f97;
+    color: white;
+    padding: 10px 12px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+label{
+    font-size: 18px;
+    letter-spacing: 3px;
+    margin-bottom: 6px;
+    display: inline-block;
+    color: #341f97;
+}
+input{
+    display: inline-block;
+    width: 100%;
+    font-size: 18px;
+    padding: 10px 14px;
+    margin-bottom: 14px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgba(53, 31, 151, 0.5);
+}
+input:focus-visible{
+    border-bottom: 2px solid#341f97;
+}
+input::placeholder{
+    color: #351f9775;
+    
+}
+
+.cont-btn{
+    margin: 12px 0 14px;
+}
+button{
+    outline: none;
+    border: none;
+    display: inline-block;
+    width: 100%;
+    padding: 12px 14px;
+    text-align: center;
+    background-color: #341f97;
+    color: white;
+    font-size: 20px;
+    border-radius: 2px;
+}
+
+.container p:last-child{
+    text-align: center;
+    color: rgb(30, 30, 30);
+}
+.container a{
+    color: #341f97;
+    text-decoration: none;
+}
+
+@media (max-width: 640px) {
+    body{
+        display: block;
+    }
+    .container{
+        width: auto;
+        height: 100%;
+    }
+    input{
+        padding: 14px;
+    }
+    h1{
+        position: relative;
+        margin-bottom: 50px;
+    }
+}
